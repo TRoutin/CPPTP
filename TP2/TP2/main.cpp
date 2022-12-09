@@ -2,6 +2,7 @@
 #include "Date.h"
 #include "Client.h"
 #include "Chambre.h"
+#include "Hostel.h"
 
 int main() {
 	//Testing Date class
@@ -21,6 +22,13 @@ int main() {
 	std::cout << ch2.getNum() << " " << ch2.getType() << " " << ch2.getPrice() << std::endl;
 	ch2.setPrice(150);
 	std::cout << ch2.getNum() << " " << ch2.getType() << " " << ch2.getPrice() << std::endl;
+
+	//Testing Hostel
+	Hostel h1;
+	Hostel h2("AD34","Ocean","Las Vegas");
+
+	std::cout << h1.getId() << " " << h1.getName() << " " << h1.getCity() << std::endl;
+	std::cout << h2.getId() << " " << h2.getName() << " " << h2.getCity() << std::endl;
 
 	return 0;
 }
