@@ -26,3 +26,8 @@ float Chambre::getPrice()
 {
 	return _price;
 }
+
+void Chambre::setPrice(float price)
+{
+	_price = price;
+}

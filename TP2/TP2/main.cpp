@@ -19,8 +19,8 @@ int main() {
 	Chambre ch2(20, "Suite", 120);
 	std::cout << ch1.getNum() << " " << ch1.getType() << " " << ch1.getPrice() << std::endl;
 	std::cout << ch2.getNum() << " " << ch2.getType() << " " << ch2.getPrice() << std::endl;
-
-
+	ch2.setPrice(150);
+	std::cout << ch2.getNum() << " " << ch2.getType() << " " << ch2.getPrice() << std::endl;
 
 	return 0;
 }
