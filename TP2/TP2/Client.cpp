@@ -1,6 +1,13 @@
 #include "Client.h"
 
 
+Client::Client()
+{
+	_id = "Default";
+	_name = "Default";
+	_firstname = "Default";
+}
+
 Client::Client(std::string id, std::string name, std::string firstname)
 {
 	_id = id;

@@ -4,6 +4,7 @@
 class Client
 {
 public :
+	Client();
 	Client(std::string id, std::string name, std::string firstname);
 	std::string getId();
 	std::string getName();
