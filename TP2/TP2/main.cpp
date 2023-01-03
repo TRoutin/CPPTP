@@ -25,12 +25,13 @@ int main() {
 	Hostel h1;
 	Hostel h2("AD34","Ocean","Las Vegas");
 
-	std::cout << h1.getId() << " " << h1.getName() << " " << h1.getCity() << std::endl;
-	std::cout << h2.getId() << " " << h2.getName() << " " << h2.getCity() << std::endl;
+	std::cout << h1;
+	std::cout << h2;
 
 	h2.addChambre(ch2);
 	Chambre test = h2.getChambre(1);
 	std::cout << test;
+	std::cout << h2;
 
 	return 0;
 }

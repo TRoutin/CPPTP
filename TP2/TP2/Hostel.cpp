@@ -29,4 +29,28 @@ std::string Hostel::getCity()
 	return _city;
 }
 
+int Hostel::getTotalChambre()
+{
+	return ch.size();
+}
+
+Chambre Hostel::getChambre(int i)
+{
+	return ch.at(i-1);
+}
+
+
+void Hostel::addChambre(Chambre c)
+{
+	ch.push_back(c);
+}
+
+std::ostream& operator<<(std::ostream& os, Hostel& h) {
+
+	std::string to_display;
+	to_display = "Hotel : " + h.getName() + " / Id : " + h.getId() + " / Ville : " + h.getCity() + " / Nb chambre : " + std::to_string(h.getTotalChambre());
+	os << to_display <<  std::endl;
+	return os;
+}
+
 

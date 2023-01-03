@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <string>
 #include "Chambre.h"
 class Hostel
 {
@@ -12,6 +13,10 @@ public:
 	std::string getId();
 	std::string getName();
 	std::string getCity();
+	int getTotalChambre();
+	Chambre getChambre(int i);
+	
+	void addChambre(Chambre c);
 
 private:
 	std::string _id;
@@ -20,3 +25,4 @@ private:
 	std::vector<Chambre> ch;
 };
 
+std::ostream& operator<<(std::ostream& os, Hostel& h);
