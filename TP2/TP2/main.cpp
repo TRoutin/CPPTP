@@ -17,11 +17,9 @@ int main() {
 
 	//Testing Chambre
 	Chambre ch1;
-	Chambre ch2(20, "Suite", 120);
-	std::cout << ch1.getNum() << " " << ch1.getType() << " " << ch1.getPrice() << std::endl;
-	std::cout << ch2.getNum() << " " << ch2.getType() << " " << ch2.getPrice() << std::endl;
-	ch2.setPrice(150);
-	std::cout << ch2.getNum() << " " << ch2.getType() << " " << ch2.getPrice() << std::endl;
+	Chambre ch2(20, "Suite", 120.10);
+	std::cout << ch1;
+	std::cout << ch2;
 
 	//Testing Hostel
 	Hostel h1;
@@ -29,6 +27,10 @@ int main() {
 
 	std::cout << h1.getId() << " " << h1.getName() << " " << h1.getCity() << std::endl;
 	std::cout << h2.getId() << " " << h2.getName() << " " << h2.getCity() << std::endl;
+
+	h2.addChambre(ch2);
+	Chambre test = h2.getChambre(1);
+	std::cout << test;
 
 	return 0;
 }

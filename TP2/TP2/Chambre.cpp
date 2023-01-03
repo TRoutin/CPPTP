@@ -30,4 +30,14 @@ float Chambre::getPrice()
 void Chambre::setPrice(float price)
 {
 	_price = price;
+
 }
+
+std::ostream &operator<<(std::ostream& os, Chambre &chambre) {
+
+	std::string to_display;
+	to_display = "Chambre numero " + std::to_string(chambre.getNum()) + " : " + chambre.getType() + " ";
+	os << to_display << std::fixed << std::setprecision(2) << chambre.getPrice() <<  std::endl;
+	return os;
+}
+

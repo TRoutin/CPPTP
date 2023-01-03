@@ -1,5 +1,9 @@
 #pragma once
 #include <iostream>
+#include <string>
+#include <iomanip>
+
+
 class Chambre
 {
 public :
@@ -19,3 +23,5 @@ private :
 	std::string _type;
 	float _price;
 };
+
+std::ostream& operator<<(std::ostream& os, Chambre& chambre);
