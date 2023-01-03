@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 class Date {
 public:
@@ -15,4 +16,6 @@ private:
     int _month;
     int _year;
 };
+
+std::ostream& operator<<(std::ostream& os, const Date& date);
 
