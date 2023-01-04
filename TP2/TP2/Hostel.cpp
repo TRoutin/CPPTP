@@ -45,6 +45,17 @@ void Hostel::addChambre(Chambre c)
 	ch.push_back(c);
 }
 
+Hostel& Hostel::operator=(const Hostel& autre)
+{
+	_id = autre._id;
+	_city = autre._city;
+	_name = autre._name;
+	ch = autre.ch;
+	return *this;
+}
+
+
+
 std::ostream& operator<<(std::ostream& os, Hostel& h) {
 
 	std::string to_display;

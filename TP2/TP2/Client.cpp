@@ -33,7 +33,7 @@ std::string Client::getFirstName()
 std::ostream& operator<<(std::ostream& os, Client& c) {
 
 	std::string to_display;
-	to_display = "Name : " + c.getName() + " First Name : " + c.getFirstName() + " Id : " + c.getId();
+	to_display = "Name : " + c.getName() + " / First Name : " + c.getFirstName() + " / Id : " + c.getId();
 	os << to_display << std::endl;
 	return os;
 }

@@ -18,6 +18,9 @@ public :
 
 	void setPrice(float price);
 
+	Chambre& operator=(const Chambre& autre);
+
+
 private :
 	int _num;
 	std::string _type;

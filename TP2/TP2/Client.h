@@ -18,4 +18,4 @@ private :
 	std::string _firstname;
 };
 
-std::ostream& operator<<(std::ostream& os, Hostel& h);
+std::ostream& operator<<(std::ostream& os, Client& c);

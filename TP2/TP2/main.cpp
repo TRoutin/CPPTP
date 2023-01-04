@@ -13,7 +13,7 @@ int main() {
 	Client c1;
 	Client c2("Id", "Name", "Firstname");
 	std::cout << c1.getId() << " " << c1.getName() << " " << c1.getFirstName() << std::endl;
-	std::cout << c2.getId() << " " << c2.getName() << " " << c2.getFirstName() << std::endl;
+	std::cout << c2;
 
 	//Testing Chambre
 	Chambre ch1;

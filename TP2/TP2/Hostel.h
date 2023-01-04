@@ -18,6 +18,9 @@ public:
 	
 	void addChambre(Chambre c);
 
+	Hostel& operator=(const Hostel& autre);
+
+
 private:
 	std::string _id;
 	std::string _name;

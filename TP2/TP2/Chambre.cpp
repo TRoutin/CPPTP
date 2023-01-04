@@ -33,6 +33,14 @@ void Chambre::setPrice(float price)
 
 }
 
+Chambre& Chambre::operator=(const Chambre& autre)
+{
+	_num = autre._num;
+	_type = autre._type;
+	_price = autre._price;
+	return *this;
+}
+
 std::ostream &operator<<(std::ostream& os, Chambre &chambre) {
 
 	std::string to_display;
