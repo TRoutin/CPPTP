@@ -16,7 +16,7 @@ Date Reservation::getStartDate()
 
 Date Reservation::getEndDate()
 {
-	return _startdate;
+	return _enddate;
 }
 
 Hostel Reservation::getHostel()
