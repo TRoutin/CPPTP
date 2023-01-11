@@ -3,10 +3,13 @@
 #include "Client.h"
 #include "Chambre.h"
 #include "Hostel.h"
+#include "Reservation.h"
 
 int main() {
 	//Testing Date class
 	Date d1(1,3,2002);
+	std::cout << d1.get_day() << "/" << d1.get_month() << "/" << d1.get_year() << std::endl;
+	Date d2(8, 4, 2002);
 	std::cout << d1.get_day() << "/" << d1.get_month() << "/" << d1.get_year() << std::endl;
 	
 	//Testing Client
@@ -32,6 +35,18 @@ int main() {
 	Chambre test = h2.getChambre(1);
 	std::cout << test;
 	std::cout << h2;
+
+	//Testing Reservation
+	Reservation Res(d1,d2,h2,c2,ch2);
+	
+	std::cout << "Detail reservation : "<< Res.getStartDate() << Res.getEndDate() ;
+	Hostel temp1 = Res.getHostel();
+	std::cout << temp1;
+	Client temp2 = Res.getClient();
+	std::cout << temp2;
+	Chambre temp3 = Res.getChambre();
+	std::cout << temp3;
+	std::cout << "Prix séjour : " << Res.getCost();
 
 	return 0;
 }

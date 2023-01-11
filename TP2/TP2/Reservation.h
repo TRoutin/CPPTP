@@ -5,6 +5,7 @@
 #include "Chambre.h"
 
 
+
 class Reservation
 {
 public :
@@ -17,6 +18,10 @@ public :
 	Client getClient();
 	Chambre getChambre();
 
+	void setStartDate(Date sdate);
+	void setEndDate(Date edate);
+
+	int getCost();
 private :
 	Date _startdate;
 	Date _enddate;

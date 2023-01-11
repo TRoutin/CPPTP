@@ -1,8 +1,10 @@
+#pragma once
 #include <iostream>
 #include <vector>
 #include <string>
 
-class Date {
+class Date
+{
 public:
     Date();
     Date(const Date& autre);
