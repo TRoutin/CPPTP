@@ -1,6 +1,6 @@
 #include "Date.h"
 
-Date::Date() : _day(1), _month(1), _year(2000)
+Date::Date() : _day(1), _month(1), _year(1)
 {
 
 }
